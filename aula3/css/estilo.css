@@ -1,0 +1,97 @@
+body{
+	background-color: #ccc;
+	font-family: "verdana";
+}
+#geral{
+	width:960px;
+	border: solid 1px #000;
+	margin:0 auto;
+}
+h1{
+	text-align: center;
+}
+nav{
+	background-color: #000;
+}
+nav ul{
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	margin:0;
+}
+nav ul li{
+	display: inline-block;
+}
+nav ul li a{
+	color:#fff;
+	text-decoration: none;
+	display:inline-block;
+	padding:15px;
+}
+nav ul li a:hover{
+	color:#F00;
+	text-decoration: underline;
+	background-color: #fff;
+}
+section#conteudo{
+	min-height:300px;
+}
+footer{
+	text-align: center;
+	background-color: #000;
+	color:#fff;
+	line-height:50px;
+}
+
+h2{
+	text-align: center;
+}
+/*------------Página ADD Produto-----------------*/
+form{
+	width:600px;
+	margin:0 auto;
+	text-align: right;
+}
+input[type="text"], input[type="password"]{
+	display:block;
+	width:600px;
+	margin:5px 0;
+	line-height: 30px;
+	border:2px solid #999;
+	border-radius: 10px;
+	text-indent: 5px;
+	font-size: 15px;
+}
+input:focus{
+	border-color: #00F ;
+	outline: none;
+}
+input[type="text"]:hover{
+	border: 2px solid #000;
+}
+input[type="submit"],input[type="reset"]{
+	display:inline-block;
+	font-size: 15px;
+	padding:7px;
+	width:100px;
+	background-color: #111;
+	color:#fff;
+	border-radius: 10px;
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+	background-color: #999;
+	color:#000;
+	cursor: pointer;
+}
+table{
+	border: 1px solid #000;
+	width:600px;
+	margin:0 auto;
+}
+table th,
+table td{
+	border:1px solid #000;
+}
+tr th:last-of-type{
+	width: 110px;
+}
