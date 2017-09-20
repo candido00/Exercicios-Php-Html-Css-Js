@@ -17,7 +17,8 @@ html,body{
 .menu {
 	width: 100%;
 	display: block;
-	background: #a0f;
+	background: #6160c4;
+	position: fixed;
 
 }
 .menu ul{
@@ -29,6 +30,7 @@ html,body{
 }
 .menu li{
 	display: inline-block;
+
 }
 .menu li a{
 	display: block;
