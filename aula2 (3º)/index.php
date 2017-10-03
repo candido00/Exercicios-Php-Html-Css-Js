@@ -15,9 +15,8 @@
 		<input type="text" name="nome" placeholder="Insira o Nome do Produto:"> <br>
 		<input type="text" name="preco" placeholder="Insira o Preço do Produto:"> <br>
 		<input type="text" name="quantidade" placeholder="Insira a quantidade do Produto:"> <br>
-		<textarea name="descricao" id="" cols="30" rows="10" placeholder="Insira a descriçao do Produto:"></textarea> <br>
-		<input type="submit" value="inserir"> <br>
-		<input type="reset" value="Apagar"> <br>
+		<textarea name="descricao" id="" cols="30" rows="10" placeholder="Insira a descriçao do Produto:"></textarea><br>
+		<input type="submit" value="enviar"> <br>
 	</form>
 </body>
 </html>
