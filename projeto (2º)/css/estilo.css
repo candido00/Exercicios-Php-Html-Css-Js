@@ -25,6 +25,9 @@ html,body{
 }
 .head{
 	display: flex;
+	position: fixed;
+	top:0;
+	width: 100%;
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
@@ -74,11 +77,14 @@ h1{
 	color:#000;
 	padding: 16px;
 	font-size: 40px;
+	margin-top: 75px;
+
 }
 .noticias{
 	background: #fff;
 	width: 900px;
 	padding: 16px;
+	float: left;
 }
 .noticias img{
     float: left;
@@ -97,8 +103,7 @@ h1{
 	height: 75px;
 }
 .lateral{
-	position:absolute;
-	top: 160px;
+	
 	width: 430px;
 	float:right;
     height: 150px;
@@ -134,8 +139,8 @@ footer{
 /*style pagina fotos*/
 
 .galeria{
-	position: relative;
 	height: 550px;
+	margin-top: 75px;
 }
 .miniatura img{
 	border: 1px solid white;
@@ -174,8 +179,9 @@ footer{
 /*style pagina contato*/
 
 .contat{
-	position: relative;
+	
 	height: 600px;
+	margin-top: 75px;
 }
 input[type= "text"],textarea[type="textarea"]{
 	display:block;
