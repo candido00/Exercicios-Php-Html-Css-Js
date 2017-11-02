@@ -16,4 +16,3 @@ buttonCalcular.addEventListener("click",function(event){
 
 $("#res").innerHTML = resultado;
 });
-
