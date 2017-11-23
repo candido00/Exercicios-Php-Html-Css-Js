@@ -5,6 +5,7 @@
   src: url(../fonts/roboto.woff2) format('woff2');
   unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
 }
+
 *{
 	margin: 0;
 	padding:0;
@@ -12,8 +13,8 @@
 	vertical-align: baseline;
 	box-sizing: border-box;
 	text-decoration: none;
-
 }
+
 html,body{
 	width: 100%;
 	height: 100%;
@@ -21,8 +22,8 @@ html,body{
 	position: relative;
 	font-size: 20px;
 	font-family: 'Robotos', sans-serif;
-
 }
+
 .head{
 	display: flex;
 	position: fixed;
@@ -32,24 +33,27 @@ html,body{
 	justify-content: space-between;
 	align-items: center;
 	background: #3084db;
+	z-index: 9999;
 }
+
 .menu {
 	flex: 1;
 	width: 100%;
 	height: auto;
-	
 }
+
 .menu ul{
 	margin: 0;
 	height: 100%;
 	text-align: right;
 	list-style: none;
-
 }
+
 .menu li{
 	display: inline-block;
 	height: 75px;
 }
+
 .menu li a{
 	display: block;
 	padding: 25px 20px;
@@ -64,58 +68,47 @@ html,body{
 	transition: all .5s ease;
 
 }
+
 .menu li:hover a{
 	color: #fff;
 	border-color: #fff;
 	box-shadow: inset 0 -5px 5px -3px rgba(255,255,255,.3);
 
 }
+
 .content{
-	height: auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 75px 0 0 0;
 }
+
+.content-home{
+	flex-flow: row nowrap;
+}
+
 h1{
 	color:#000;
 	padding: 16px;
 	font-size: 40px;
-	margin-top: 75px;
+}
 
-}
-.noticias{
-	background: #fff;
-	width: 900px;
-	padding: 16px;
-	float: left;
-}
-.noticias img{
-    float: left;
-    border: transparent thin solid;
-    margin: 0 12px 0 0;
-
-}
-.noticias p{
-	text-align: justify;
-
-}
 .logo{
 	flex: 0 auto;
 	display: inline-block;
 	max-width: 100%;
 	height: 75px;
 }
-.lateral{
-	
-	width: 430px;
-	float:right;
-    height: 150px;
-    margin: 0;
-    right: 0;
-}
+
 footer{
+	margin: 20px 0 0 0;
 	position: relative;
 	clear: both;
 	display: block;
 	bottom: 0;
-
+	text-align: left;
+	padding: 20px 0;
 }
 /*style pagina sobre*/
 
@@ -123,12 +116,14 @@ footer{
 	background: #fff;
 	padding: 16px;
 }
+
 .anjo img{
     float: left;
     border: transparent thin solid;
     margin: 0 12px 0 0;
 
 }
+
 .anjo p{
 	text-align: justify;
 
@@ -138,52 +133,11 @@ footer{
 
 /*style pagina fotos*/
 
-.galeria{
-	height: 550px;
-	margin-top: 75px;
+#tabela{
+	height: 850px;
 }
-.miniatura img{
-	border: 1px solid white;
-	margin: 0 5px 5px 0;
 
-}
-.miniatura:hover{
-	background-color: transparent;
-
-}
-.miniatura:hover{
-	border: 1px solid blue;
-}
-.miniatura span{
-	position: absolute;
-	background-color: lightyellow;
-	padding: 5px;
-	left: -1000px;
-	border: 1px dashed gray;
-	visibility: hidden;
-	color: black;
-	text-decoration: none;
-
-}
-.miniatura span img{
-	border-width: 0;
-	padding: 2px;
-}
-.miniatura:hover span{
-	visibility: visible;
-	top: 0;
-	left: 230px;
-	z-index: 50; 
-
-}
-/*style pagina contato*/
-
-.contat{
-	
-	height: 600px;
-	margin-top: 75px;
-}
-input[type= "text"],textarea[type="textarea"]{
+input[type= "text"],textarea[type="textarea"],[type="email"]{
 	display:block;
 	width:350px;
 	margin: 0;
@@ -193,13 +147,16 @@ input[type= "text"],textarea[type="textarea"]{
 	text-indent: 5px;
 	font-size: 15px;
 }
+
 input:focus{
 	border-color:#3084db;
 	outline: none;
 }
-input[type="text"]:hover,textarea[type="textarea"]:hover{
+
+input[type="text"]:hover,textarea[type="textarea"]:hover,[type="email"]:hover{
 	border: 3px solid #3084db;
 }
+
 input[type="submit"]{
 	display:inline-block;
 	font-size: 15px;
@@ -210,15 +167,71 @@ input[type="submit"]{
 	border-radius: 6px;
 	border:2px solid #708090
 }
+
 input[type="submit"]:hover{
 	background-color: #708090;
 	color:#000;
 	cursor: pointer;
 	border: 2px solid #3084db;
 }
-body{
-	background-color: #edfbff;
-	font-family: "verdana";
+
+.container{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 5em 1em;
 }
 
+/*style pagina contato*/
 
+.contat{
+	flex: 0 auto;
+  	height:300px;
+}
+
+#mapa{
+	flex: 0 auto;
+	width: 800px;
+	height: 600px;
+	border: transparent thin solid;
+	margin: 0 12px 0 0;
+}
+
+#btLocalizar{
+	text-align: left;
+	background-color: #fff;
+}
+
+.news{
+	flex: 0 auto;
+	width: 900px;
+	padding: 16px;
+}
+
+.news article{
+	background: #fff;
+	padding: 16px;
+	border: none;
+}
+
+.news article + article{
+	border-top: 1px solid #ccc;
+}
+
+.ncontent{
+	display: flex;
+	flex-flow: row;
+	align-items: flex-start;
+	margin: 12px 0;
+}
+
+.ncontent img{
+	margin: 0 12px 0 0;
+}
+
+.lastnews{
+	flex: 1;
+	height: 150px;
+	padding: 0 20px;
+}
