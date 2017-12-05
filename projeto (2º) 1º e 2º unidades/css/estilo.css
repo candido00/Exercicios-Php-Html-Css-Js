@@ -235,3 +235,29 @@ input[type="submit"]:hover{
 	height: 150px;
 	padding: 0 20px;
 }
+
+.gale{
+		flex-flow: column;
+		align-items: center;
+}
+
+.gale h1{
+	flex: 1 100%;
+	width: 100%;
+}
+
+.gale hr{
+	height: 1px;
+    width: 914px;
+    border: none;
+    background: #242424;
+    margin: 5px 0;
+}
+
+.gale h2{
+	text-align: center;
+}
+
+.gale table{
+	flex: 1 100%;
+}

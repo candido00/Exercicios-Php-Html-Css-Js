@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Canção Nova</title>
 	<link rel="stylesheet" href="css/estilo.css">
-	<script src="js/global.js"></script>
 </head>
 <body>
 	<header class="head">
@@ -18,24 +17,24 @@
 			</ul>
 		</nav>
 	</header>
+		<section class="content gale">
 		<h1 class="headg">Galeria(fotos)</h1>
-		<center>
 		<h2> <output id="titulo">Aparecida</output></h2>
 		<HR/>
 
 		<table align="center" width="900" id="tabela">
 			<tr>
-				<td><img src="imagens/aparecida.jpg" width="150" height="120" onmouseover="trocar('imagens/aparecida.jpg','Aparecida','Nossa Senhora Aparecida')"></td>
+				<td><img src="imagens/aparecida.jpg" width="150" height="120" onclick="trocar('imagens/aparecida.jpg','Aparecida','Nossa Senhora Aparecida')"></td>
 
-				<td><img src="imagens/cancao.jpg" width="150" height="120" onmouseover="trocar('imagens/cancao.jpg','Cancao','Cancao Nova')"></td>
+				<td><img src="imagens/cancao.png" width="150" height="120" onclick="trocar('imagens/cancao.png','Cancao','Cancao Nova TV')"></td>
 
-				<td><img src="imagens/cruz.jpg" width="150" height="120" onmouseover="trocar('imagens/cruz.jpg','Cruz','Cruz Santuario Cancao Nova')"></td>
+				<td><img src="imagens/cruz.jpg" width="150" height="120" onclick ="trocar('imagens/cruz.jpg','Cruz Santuario','Cruz Santuario Cancao Nova')"></td>
 
-				<td><img src="imagens/download.jpg" width="150" height="120" onmouseover="trocar('imagens/download.jpg','Cruz','Cruz Santuario Cancao Nova Paulista')"></td>
+				<td><img src="imagens/cruz1.jpg" width="150" height="120" onclick ="trocar('imagens/cruz1.jpg','Cruz','Cruz Santuario Cancao Nova Paulista')"></td>
 
-				<td><img src="imagens/download.png" width="150" height="120" onmouseover="trocar('imagens/download.png','Logo','Logo Cancao Nova')"></td>
+				<td><img src="imagens/cancao1.jpg" width="150" height="120" onclick="trocar('imagens/cancao1.jpg','Logo','Logo Cancao Nova')"></td>
 
-				<td><img src="imagens/images.jpg" width="150" height="120" onmouseover="trocar('imagens/images.jpg','Santuario','Santuario Cachoreira Paulista')"></td>
+				<td><img src="imagens/santuario.jpg" width="150" height="120" onclick="trocar('imagens/santuario.jpg','Santuario','Santuario Cachoreira Paulista')"></td>
 				
 			</tr>
 
@@ -50,19 +49,15 @@
 				<td colspan="6" align="center"><output id="descricao">Nossa Senhora Aparecida</output></td>
 				
 			</tr>
-			
 
-
-		</table>
-		
-
-	</center>
+		</table>		
+		</section>
 		
 		<footer>
 			<address>
 			cancaonova.com © 2002 – 2017 Todos os direitos reservados.
 			</address>
 		</footer>
-
+<script src="js/galeria.js"></script>
 </body>
 </html>

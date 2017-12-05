@@ -1,10 +1,3 @@
-function trocar(imagem,titulo,descricao) {
-	document.getElementById('imagem_principal').src=imagem;
-	document.getElementById('titulo').value = titulo;
-	document.getElementById('descricao').value = descricao;
-	// body...
-}
-var bt = document.getElementById("btLocalizar");
 var divMapa = document.getElementById("mapa");
 
 if(navigator.geolocation){
@@ -13,7 +6,6 @@ if(navigator.geolocation){
 			var long = -35.378309;
 
 			var latlong = new google.maps.LatLng(lat,long);
-			console.log(latlong);
 			var opcoes = {
 				center:latlong,
 				zoom:14
@@ -26,3 +18,24 @@ if(navigator.geolocation){
 			
 		});
 	}
+
+
+/*function validacao Nome(evt) {
+
+	if (new RegExp(/[^a-z,A-Z,á,é,í,ó,ú,â,ê,ô,ã,õ,ç,Á,É,Í,Ó,Ú,Â,Ê,Ô,Ã,Õ,Ç,ü,ñ,Ü,Ñ,\s]/).test(document.form.nome.value)) {
+		alert("Por favor digite somente letras.");
+		document.form.nome.value = "";
+		document.form.nome.focus();
+		return false
+	}
+
+    var tecla = event.keyCode;
+    
+    if(tecla == 13)
+    	if (document.form.nome.value=="") {
+    		alert("Preencha o campo nome corretamente")
+    		document.form.nome.focus();
+    		return false
+    	}
+
+};*/
